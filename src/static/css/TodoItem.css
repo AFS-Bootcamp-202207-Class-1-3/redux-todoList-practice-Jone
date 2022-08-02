@@ -1,0 +1,12 @@
+.show-text-decoration{
+    text-decoration: line-through;
+}
+
+input {
+    font-size: 18px;
+}
+
+
+.delete-btn {
+    background-color:#e52020d9
+}
