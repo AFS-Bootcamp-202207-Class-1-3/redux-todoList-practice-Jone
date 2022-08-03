@@ -14,6 +14,7 @@ function TodoList() {
       dispatch(updateTodo(response.data));
     });
   }, [dispatch]);
+
   return (
     <div>
       <h1>TodoList</h1>

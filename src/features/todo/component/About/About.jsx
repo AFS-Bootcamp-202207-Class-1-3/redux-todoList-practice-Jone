@@ -1,4 +1,11 @@
+import { Button } from "antd";
+
 function About() {
-  return (<div>About</div>);
+  return (
+    <div>
+      <Button size="large">About</Button>
+      <Button>About</Button>
+    </div>
+  );
 }
 export default About;
