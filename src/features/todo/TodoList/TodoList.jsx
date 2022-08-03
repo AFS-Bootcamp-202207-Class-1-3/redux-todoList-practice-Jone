@@ -1,5 +1,5 @@
-import TodoGenerator from "./TodoGenerator";
-import TodoGroup from "./TodoGroup";
+import TodoGenerator from "../TodoGenerator/TodoGenerator";
+import TodoGroup from "../TodoGroup/TodoGroup";
 
 function TodoList() {
   return (

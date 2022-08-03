@@ -1,4 +1,4 @@
-import TodoItem from "./TodoItem";
+import TodoItem from "../TodoItem/TodoItem";
 import { useSelector } from "react-redux";
 function TodoGroup() {
   const todos = useSelector((state) => state.todo.todos);

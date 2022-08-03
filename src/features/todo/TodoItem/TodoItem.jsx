@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { onDelete, onToggle } from "./todoSlice";
-import "../../static/css/TodoItem.css";
+import { onDelete, onToggle } from "../todoSlice";
+import "./TodoItem.css";
 function TodoItem(props) {
   const { todo, index } = props;
   const dispatch = useDispatch();

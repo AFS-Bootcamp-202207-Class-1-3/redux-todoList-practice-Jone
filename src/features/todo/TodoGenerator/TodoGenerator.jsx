@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "./todoSlice";
-import "../../static/css/TodoGenerator.css"
+import { addTodo } from "../todoSlice";
+import "./TodoGenerator.css"
 function TodoGenerator() {
       const [inputeText, setInputeText] = useState("");
       const dispatch = useDispatch();
