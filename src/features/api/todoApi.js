@@ -1,10 +1,10 @@
 import { api } from "./api";
 
-export const getTodos = () => {
+export const getAllTodos = () => {
   return api.get("/todos");
 };
 
-export const postTodo = (context) => {
+export const saveTodo = (context) => {
   return api.post("/todos", context);
 };
 
@@ -12,6 +12,10 @@ export const deleteTodo = (id) => {
   return api.delete(`/todos/${id}`);
 };
 
-export const toggleTodo = (id, done) => {
-    return api.put(`/todos/${id}`, done)
+export const toggleTodoStatus = (id, done) => {
+  return api.put(`/todos/${id}`, done)
+};
+
+export const updateTodoContext = (id, context) => {
+  return api.put(`/todos/${id}`, context)
 };

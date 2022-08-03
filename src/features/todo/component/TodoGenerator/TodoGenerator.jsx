@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { postTodo } from "../../../api/todoApi";
+import { saveTodo } from "../../../api/todoApi";
 import { addTodo } from "../../todoSlice";
 import "./TodoGenerator.css";
 function TodoGenerator() {
@@ -16,7 +16,7 @@ function TodoGenerator() {
       alert("输入的字符串不能为空！");
       return;
     }
-    postTodo({ context: inputeText }).then((response) => {
+    saveTodo({ context: inputeText }).then((response) => {
       dispatch(addTodo(response.data));
     });
     setInputeText("");
