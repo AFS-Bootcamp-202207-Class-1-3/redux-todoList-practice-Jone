@@ -7,9 +7,9 @@ function Layout() {
     <div className="layout">
       <h1>MY TODO</h1>
       <nav>
-        <Link to="">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/done">Done</Link>
+        <Link to="">Home&nbsp;&nbsp;</Link>
+        <Link to="/about">&nbsp;&nbsp;About&nbsp;&nbsp;</Link>
+        <Link to="/done">&nbsp;&nbsp;Done</Link>
       </nav>
       <div className="content">
         <Outlet />

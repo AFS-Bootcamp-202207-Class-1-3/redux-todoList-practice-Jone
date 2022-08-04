@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Modal } from 'antd';
 import { useDispatch } from "react-redux";
-import { deleteTodo, toggleTodoStatus, updateTodoContext, getAllTodos } from "../../../api/todoApi";
-import { onDelete, onToggle, addTodos, updateContext } from "../../todoSlice";
+import { deleteTodo, toggleTodoStatus, updateTodoContext } from "../../../api/todoApi";
+import { onDelete, onToggle, updateContext } from "../../todoSlice";
 import "./TodoItem.css";
 function TodoItem(props) {
   const { todo } = props;
@@ -45,7 +45,7 @@ function TodoItem(props) {
     setInputeText(event.target.value);
   }
   return (
-    <div>
+    <div className="box">
       <input
         className={todo.done ? "done" : ""}
         value={todo.context}

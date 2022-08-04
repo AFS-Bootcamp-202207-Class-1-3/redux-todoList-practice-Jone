@@ -25,7 +25,7 @@ function TodoGenerator() {
   return (
     <div>
       <input type="text" value={inputeText} onChange={updateInpute} />
-      <button onClick={handleAddTodoEvent}>add</button>
+      <button className="add-btn" onClick={handleAddTodoEvent}>add</button>
     </div>
   );
 }
