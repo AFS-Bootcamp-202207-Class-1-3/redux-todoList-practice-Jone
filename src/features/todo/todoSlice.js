@@ -33,7 +33,7 @@ const todoSlice = createSlice({
     updateContext(state, action) {
       return {
         todos: state.todos.map((todo) =>
-          todo.id === action.payload.id ? { ...todo, context: action.payload.context } : todo
+          todo.id === action.payload.id && { ...todo, context: action.payload.context }
         ),
       };
     },

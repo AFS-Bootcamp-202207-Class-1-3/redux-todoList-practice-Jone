@@ -1,6 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
+import "./layout.css"
 
 function Layout() {
+
   return (
     <div className="layout">
       <h1>MY TODO</h1>
