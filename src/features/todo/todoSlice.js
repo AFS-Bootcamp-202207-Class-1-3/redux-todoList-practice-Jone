@@ -31,11 +31,10 @@ const todoSlice = createSlice({
     },
 
     updateContext(state, action) {
-      return {
-        todos: state.todos.map((todo) =>
-          todo.id === action.payload.id && { ...todo, context: action.payload.context }
-        ),
-      };
+    
+      const index = state.todos.findIndex((todo) => todo.id === action.payload.id);
+      state.todos[index].context = action.payload.context;
+   
     },
   },
 });

@@ -16,8 +16,8 @@ function TodoItem(props) {
   };
 
   const handleDelete = () => {
-    deleteTodo(todo.id).then((response) => {
-      dispatch(onDelete(response.data.id));
+    deleteTodo(todo.id).then(() => {
+      dispatch(onDelete(todo.id));
     });
   };
 
